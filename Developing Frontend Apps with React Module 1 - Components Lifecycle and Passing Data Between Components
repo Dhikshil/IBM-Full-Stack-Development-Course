@@ -1,6 +1,7 @@
+A component's lifecycle is its relation with the DOM which can be altered using React methods for each phase of a component.
 
-Constructors exist in 3 pahses:
-Mounting - When the constructor is first created
+Components exist in 3 pahses:
+Mounting - When the component is first created using constructors
 Updating - When the component renders changes in its state or its properties
 Unmounting - When Component is removed from DOM
 
@@ -9,7 +10,7 @@ getDerivedStateFromProps() is used only when the state depends on the changes to
 render() is mandatory in React allowing the component to appear.
 componentDidMount() is called when a component is mounted or insrted into the DOM tree.
 
-When updating a constructor, we still use getDerivedStateFromProps() only when the state depends on the changes to the props of the constructor.
+When updating a component, we still use getDerivedStateFromProps() only when the state depends on the changes to the props of the constructor.
 shouldComponentUpdate() is needed everytime there is a change in state and will in default return TRUE and is made FALSE when the changes shouldn't
 be rendered.
 render() here updates the component.
