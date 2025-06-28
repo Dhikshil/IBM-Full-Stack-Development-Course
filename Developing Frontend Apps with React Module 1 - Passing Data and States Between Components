@@ -10,4 +10,15 @@ render() is mandatory in React allowing the component to appear.
 componentDidMount() is called when a component is mounted or insrted into the DOM tree.
 
 When updating a constructor, we still use getDerivedStateFromProps() only when the state depends on the changes to the props of the constructor.
-shouldComponentUpdate() is needed everytime there is a cheange in state 
+shouldComponentUpdate() is needed everytime there is a change in state and will in default return TRUE and is made FALSE when the changes shouldn't
+be rendered.
+render() here updates the component.
+getSnapshotBeforeUpdate() takes a snapshot before rendering to see the changes made.
+ComponentDidUpdate() takes any values returned by getSnapshotBeforeUpdate() and is invoked after the updating occurs.
+
+When unmounting a component, the componentWillUnmount() method is called.
+
+We can pass data between components and there are three different types of relationships:
+Parent -> Child using properties
+Child -> Parent using callbacks
+Between Siblings using Redux
