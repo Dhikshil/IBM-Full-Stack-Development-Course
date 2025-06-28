@@ -1,1 +1,13 @@
 
+Constructors exist in 3 pahses:
+Mounting - When the constructor is first created
+Updating - When the component renders changes in its state or its properties
+Unmounting - When Component is removed from DOM
+
+When mounting, first the constructor method is called to construct the object.
+getDerivedStateFromProps() is used only when the state depends on the changes to the props.
+render() is mandatory in React allowing the component to appear.
+componentDidMount() is called when a component is mounted or insrted into the DOM tree.
+
+When updating a constructor, we still use getDerivedStateFromProps() only when the state depends on the changes to the props of the constructor.
+shouldComponentUpdate() is needed everytime there is a cheange in state 
