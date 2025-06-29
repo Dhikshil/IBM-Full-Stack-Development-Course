@@ -7,3 +7,16 @@ We can assign either direct values as attributes or assign constants and variabl
 will all be accessed the same in the child component, by passing in props and treating it as an object.
 If a prop is not specified in the parent component, default values can be set in the child component's 
 defaultProps object, this statement appears directly before the export statement.
+The default values ensure consistent rendering and allow you to add more attributes to the child component
+when not specified in the parent component.
+
+The usefulness of props and functions comes from being able reuse them, this helps you to create various different code 
+built on these props and components without having to rewrite code and minimises redundant code. Having the data 
+and props be unidirectional is quite useful because it makes code more readable and understand how the code 
+works, enabling errors and bugs to be spotted earlier.
+Props allow good customisation within the code as the same components can be reused flexibly and in creative
+manners allowing for some whole new functionality for a specific task.
+Props allow complex UIs to be broken down into many smaller parts allowing code to be kept simple but be able to
+be built up to something much larger and with great functionality.
+
+We can use the useState hook in conjunction with an even to control the UI in a child component
