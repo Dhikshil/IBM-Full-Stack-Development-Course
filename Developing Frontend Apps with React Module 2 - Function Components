@@ -1,1 +1,9 @@
 
+Component properties aka props allow you to pass data from one component to another.
+Props stores the attributes of a component and allows you to pass them from a parent to a child component.
+However, these components are read-only meaning these attributes cannot be changed within the child component. 
+
+We can assign either direct values as attributes or assign constants and variables in the parent component,they
+will all be accessed the same in the child component, by passing in props and treating it as an object.
+If a prop is not specified in the parent component, default values can be set in the child component's 
+defaultProps object, this statement appears directly before the export statement.
