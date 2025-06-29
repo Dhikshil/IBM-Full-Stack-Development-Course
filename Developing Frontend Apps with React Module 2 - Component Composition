@@ -1,1 +1,5 @@
 
+We can combine components using compnent composition and we can combine multiple smaller components to create more complex functionality.
+
+Abstraction is a principle of component composition, it works by breaking down large abstract UI into smaller blocks of code and sections,
+reusability principle allows 
