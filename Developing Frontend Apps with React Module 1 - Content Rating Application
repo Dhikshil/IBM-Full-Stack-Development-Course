@@ -1,1 +1,10 @@
 Here we created a content rating application which we can use to like or dislike content.
+We have first started by adding a component using the constructor and assigning it the props:
+likes and dislikes.
+We then displayed these values in a button using HTML code and accessed the props by accessing the object
+and using its attributes.
+We then added functions to the component where we could increment the values of like and dislike when called
+We added this to the displayed values by using onClick to call these fucntions when clicked on and were able 
+to increase the value on the button when clicked on.
+We finally added a total reactions counter by using the existing functions to increment another attribute which
+was displayed separately.
