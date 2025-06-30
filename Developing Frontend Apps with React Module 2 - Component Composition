@@ -2,4 +2,5 @@
 We can combine components using compnent composition and we can combine multiple smaller components to create more complex functionality.
 
 Abstraction is a principle of component composition, it works by breaking down large abstract UI into smaller blocks of code and sections,
-reusability principle allows 
+reusability principle allows you to reuse chuncks of cocde making it easier to organise and maintain and avoids duplicating code.
+Components can be placed in a hierarchy to the hierarchy principle
