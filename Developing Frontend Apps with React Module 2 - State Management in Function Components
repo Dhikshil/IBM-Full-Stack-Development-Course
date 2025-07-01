@@ -1,1 +1,6 @@
 
+States are used to manage data within a component which can change over time, a components state is its condition in a specific time.
+The state of an object influences how the component behaves and renders the component based on its state. React enables local state control.  
+Hooks allow you to reuse logic without changing the hierarchy of components or using uncessary and redundant nesting, useState hook allow you
+to add state management to function components.
+
