@@ -3,4 +3,12 @@ We can combine components using compnent composition and we can combine multiple
 
 Abstraction is a principle of component composition, it works by breaking down large abstract UI into smaller blocks of code and sections,
 reusability principle allows you to reuse chuncks of cocde making it easier to organise and maintain and avoids duplicating code.
-Components can be placed in a hierarchy to the hierarchy principle
+Components can be placed in a hierarchy to the hierarchy principle, where there will be parent and child components which assists with
+organisation and modular design of large complex UIs.
+Component composition allows data to be passed from one component to another, props allow you to pass data from parent to child, you can
+also pass entire components from one to another component.
+Higher-order components can either accept a component to take in or return a component with greater functionality, HOCs allow you to add
+features such as state managament or logic without modifying its implementation.
+
+HOCs can be used in place of lots of similar components saving space and time as we don't have to re-werite the code multiple times and makes
+the code much more readable.
