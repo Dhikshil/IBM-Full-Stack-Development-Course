@@ -1,1 +1,29 @@
 
+Functional components are the building blocks of UIs, where the UI can be broken down into many functional components which can help
+manage the creation of a UI and the maintenance. 
+Functional methods do not have traditional lifecycle methods but achieve similar functionalities with hooks and states.
+Functional components undergo 4 distinct phases in their lifecycle: mounting phase, updating phase, the unmounting phase and error handling
+phase.
+
+In the mounting phase of a functional component, we initialise the component and prepare it for rendering on the document object model(DOM).
+The three main steps of the mounting phase include, the main intialisation of the component, intialising the state and dealing with any 
+side effects. 
+In the intialisation stage, React will run the function body of the funcitonal component which will set up the intial structure of the component.
+In the state intialisation stage, React will use the useState hook to declare state variables, these variables can hold data and when changed 
+will trigger the rerendering of the component.
+Side effects will include fetching data, subscriptions and DOM manipulation and utilises the useEffect hook, this is to ensure side effects only
+execute once and optmises performance and prevents unessecary re-execution.
+
+During the updating phase of a functional component, we respond to the changes in a component's state or props by reinvoking the function
+body component. This will trigger a re-evaluation of the JSX code allowing React to know what to render in the new UI.
+The updating phase consits of responding to user interactions and any changes in the state of components, ensuring the UI stays in sync with the
+data.
+
+In the unmounting phase, we perform clean up operations when removing the funciton component as it reaches the end of its lifecycle, these 
+actions involve the component directly cleaning up event listeners, subscriptions, tiemer or any other resources created druing its lifecyle.
+Thsi cleanup actively ensures that the resources used by or set by the ccomponent for a function are released when the component is unmounted
+from the DOM, preventing potential issues and memory leaks.
+
+In error handling, we deal with errors that occur during rendering or within a child component's lifecyle method in React by routing it to 
+the nearest boundary. Error boundaries are special components that catch errors during the rendering or the lifecycle of child components.
+Error boundaries show a default UI ensuring the rest of the application remains functional despite the error.
