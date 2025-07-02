@@ -1,1 +1,25 @@
 
+Testing is a review of how the code executes, this is to ensure that the code exectures error free and a various suite of tests can be used to test the application.
+Some advantages prevents the code from regressing, allows focus on the current task without worrying about if the code is working, allows for modular
+construction of the application and reduces the need of manually verifying the code's integrity.
+The disadvantages include, writing more code for the use of debugging and to maintain the growth of code and facilitate new features, this must be continuously done,
+a successful application may be rejected due to some non-criticaal errors in terms of code integration.
+Testing is needed to get rid of errors in code and to ensure that the code works as intended for the end user and msut be continuously done after each change to make
+sure past bugs do not reappear.
+
+You can test React application by taking in isolated components in a simple test enviorment and asset their output, this will be done with shallow rendering as a 
+component can be run with a range of properties.
+Another method of testing React applications consists of running the complete application in a realisitc senario in a browser, also known as end-to-end testing.
+This will consist of all the units and integrates all little tests into one big test to see how all the components work with each other.
+
+There are 3 phases of React component testing, in the arranging phase, the component's properties are prepared.
+In Act, the component renders the DOM in the UI and registers any user actions or events that can be scripted.
+In Assert, the expected values are set and we verify certain side effects.
+
+When considering the tools to use when testing React applications, we can compare their speed and environemnt, some tools provide quick feedback but can often be
+innaccurate to actual broswer behaviour. USing a real browser environment is slower but gives mroe accurate testing feedback.
+
+In NodeJs, Mocha can be used as a test running tool, Chai as an assertion library and Sinon can be used to test your JavaScript logic but is used optionally. Enzyme is 
+another tool that is used to render components and is used in conjunction with the other tools.
+Jest combines the power Mocha, Chai and Sinon, React Testing Library is a set of helpers that allow you to test React components without their implementation details.
+Jest can also be combined with React Testing Library.
