@@ -1,1 +1,16 @@
+Hooks alleviate the challenges faced by class components by providing a way to write functional components with the same capabilities as class components.
+Mainly, you can access states with hooks in function components and the component state is preserved upon update. The same functions are provided by
+functioon components as by class components which reduces complexity. Hooks allow you to hook into React states and lifecycle features form function components.
+
+You can write customised component hooks and can be used across multiple components to prevent code duplicaiton.
+Advantages of hooks include; increase in readability, less code written for same function creating more optimised and simplified code. Hooks allow developers to
+handle events and logic without the use of classes and provide a performance boost.
+
+Hooks can only be used with function components and should be called only at the top level of a component tree.
+useState hook allows us to access the state of a component.
+useEffect hook manages side effects such as document changes.
+useContext hook manages context changes and provides access to context.
+
+Custom React hooks allow you to add increased functionality, we start with 'use' as a prefix, cusstom hooks are compositions of one or more hooks and work like
+JavaScript functions. These can be reused and combined for more hooks or functions.
 
