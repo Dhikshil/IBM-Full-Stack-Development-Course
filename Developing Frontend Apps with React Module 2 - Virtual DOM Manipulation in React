@@ -1,1 +1,20 @@
+Document Object Model is an interface for webpages and documents to represent HTML structures in a tree-like structure, each node represents an element of the HTML code.
+DOM allows programs to manipulate the document's content which consist of nodes, elements, attributes and events. DOM expresses the document in a tree-like structre made of nodes 
+and nodes consist of text, elements and attributes. Elements contain the content of the HTML and represent the HTML code. Attributes can provide addition informaiton about
+elements such as properties, styles or behaviour. DOM allows JavaScript to respond to user interactions or other aactions in the document.
+
+Virtual DOM is a concept in Reac to optimise the performance of web applications, it is an abstraction of the actual DOM in memor and is kept in sync using React's 
+reconciliation process. The virtual DOM is created when a React component is first rendered, when changes are made to the state or to the props, a new virtual DOM representation is created.
+React compares the virtual DOM with the previous one and uses a diffing algorithm to figure out the smallest chages required ot uppdate the real DOM. React uses batching to
+optimise changes and applying them to the real DOM efficiently as a patch, to minimise wasteful re-renders and DOM operations.
+
+Virtual DOM is important in React as it offers ehanced speed, simple development process, cross platform compatibility, state management and testign and debugging. Virtual DOM
+increases speed by reducing the number of changes required on the DOM. Virtual DOM in React is advantageous due to more efficient updates, component reusability, easy updating
+to delcaritve syntax and improved server side rendering. React's virtual DOM esures that only the necessary changes are made to the actual DOM increasing the rendering speeds.
+Virtual DOM allows develpers to create reusable components that can be composed and updated efficiently. 
+
+The loading process of the virtual DOM differs to the normal DOM, the normal DOM creates a DOM tree from the HTML code, analyses the HTML markup and generates DOM nodes and
+displays the conten on the screen. With huge normal DOM trees, rendering web pages can be expensive.
+Virtual DOM is an abstraction of the DOM that resides in memory meaning the changes are not immediately updated in the real DOM, React creates a virtual DOM tree representation
+in memory, this virtual DOM is based on the React component's intial state and properties.
 
