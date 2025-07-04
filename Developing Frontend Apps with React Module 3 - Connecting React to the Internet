@@ -1,1 +1,7 @@
 
+External resources are any programs, platforms or infastructure that can be connected to over a netwrok hosted outside our
+application's environment. These programs provide features or tools.
+APIs enable your application to exchange data with outside third-party services, APIs enable you to acquire needed data and
+execute operations and add features.
+
+Axios is a popular JavaScript library to make HTTP browser requests.
