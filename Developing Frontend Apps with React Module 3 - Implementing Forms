@@ -1,1 +1,19 @@
 
+Forms allow users to interact with the application by submitting data, this can be done using forms for user registration, surveys
+or when the user places an order. The place where the user interacts with the application in the form are called feilds and there
+are many types of feilds.
+
+When handling forms, we must consider the submission logic and validating the data inputted by the user, we first caputr e the data 
+and temporarily store it in the ocmponent state, we do not submit the data directly from the form to the server, we have to split 
+them into text area, selecitons and input. We make updates using setState() method.
+
+Your form must provice submission logic about when the user wants the data to be submitted and accepted. We can validate the data
+the the user enters by making sure it follows certain rules such as minimum character length or including special characters for passwords.
+We must get the input, manage and update component states, validate input and display any corresponding error messages.
+
+React forms can be controlled or uncontrolled, uncotrolled forms will have the browser keep track of data which doesnt require any 
+extra code but only emulale behaviour. Controlled forms will have specific component states to keep track of data and weite code logic for
+updates but provides a more robust behaviour of the form.
+
+React hook form librbary can be used to help with state management and data vailadtion for applications with forms, this reduces code
+and improves performances.
