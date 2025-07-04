@@ -11,3 +11,17 @@ application reducing the need for new objects with each change of state.
 Redux handles multiple state changes in a Redux store which stores all the application state data, this helps reduce
 code complexity and increases readability, maintenance of code is easier, the states are easier to predict and improves
 performance by reducing the number of needed rendering by only updating the necessary parts rather than the entire application.
+
+Redux uses actions, stores and reducers to update component properties, store contains all the current states in the application,
+an action is called and is an object that indicates the need for a state to update and reducers specify how to change the state.
+
+Dispatching an action is when you create an action using an action creator and sending the action to the Redux store.
+The store contains all application states and uses a data structure called a state tree to store and maintain the application
+states.
+The action object contains the action that needs to be performed, it contains properties and the store uses the type property
+to determine which reducer should be used to process the action. Payload property contains other data needed to update the state.
+The reducer will take in the action object and the state object and calculate a new object but the right reducer must be used
+and this is determined using the type property by the Redux store.
+
+Reducers ensure predicitability by making sure the state changes are constant with the same context and makes readability easier
+as it separates tthe action description from the update description, this makes debugging and code maintenance easier.
