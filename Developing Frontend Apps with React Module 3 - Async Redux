@@ -1,2 +1,14 @@
 
 Synchronous operations occur chronologically, whereas asynchronous operations can be run parallel so when the first is running, the second can start processing.
+State management in Redux requires synchronous behaviour. Async and Sync can be used in different situations and are required in different places.
+
+Async dispatching allows the application to maintain responsiveness where sync dispatching doesn't provide as it would stop all user interaction while an
+aciton is being performed. However, there needs to be more than actions and reducers; middleware allows you to interact with async data, when the actions are
+provided from the store for a state change, we can use middleware to intercept the action to support async behaviour and delays the actions. Once the process 
+is complete, the rest of the Redux continues as normal.
+
+Thunk and Saga are two middleware.
+Using Thunk, the action creators can return functions aswell and these functions can perfrom async operations, Thunk is relatively easy to learn and is used in
+simple applicaitons. However, concurrency issues are difficult with Thunk and it doesnt scale well when the applciation grows.
+Saga uses have generator functions that allow you to encapsulate async logic and can multitask with Redux as the Redux store can pause and resume execution.
+Sagas have multiple debugging features making testing easy, Saga scales well but is quite complicated to learn and use.
