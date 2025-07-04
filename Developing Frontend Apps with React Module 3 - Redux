@@ -1,0 +1,13 @@
+
+Application states hold information about the entire application and can be accesible from anywhere in the application, the
+redux library helps u handle the application state instead of individual components handling their own state. Redux maintains
+the application level state and passes the information from application level to component level when the state is called.
+
+The bigger your application, the more useful the redux becomes, as with more components, it will be harder to manage all the 
+component states. There may be data that will be used in multiple components, this will make it harder to track how the 
+data is flowing along the DOM tree, using Redux helps with this complication. Updates can also be made anywhere in the 
+application reducing the need for new objects with each change of state.
+
+Redux handles multiple state changes in a Redux store which stores all the application state data, this helps reduce
+code complexity and increases readability, maintenance of code is easier, the states are easier to predict and improves
+performance by reducing the number of needed rendering by only updating the necessary parts rather than the entire application.
