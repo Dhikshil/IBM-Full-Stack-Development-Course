@@ -14,3 +14,7 @@ useContext hook manages context changes and provides access to context.
 Custom React hooks allow you to add increased functionality, we start with 'use' as a prefix, cusstom hooks are compositions of one or more hooks and work like
 JavaScript functions. These can be reused and combined for more hooks or functions.
 
+A side effect refers to any operation that needs to be performed as soon as the page loads, these are asynchronous and affect the application's statee or UI.
+In the useEffect hook, dependencies refer to values or vaariabels that determine when the useEffect should run, dependencies are specified to the useEffect hooks
+as an array paramater. When the parameter is empty, the hook runs only once at the start when the component is mounted, when a parameter is passed, the component 
+renders whenever the values of the dependencies is changed, if the dependency array is omitted in code, the hook runs every render.
