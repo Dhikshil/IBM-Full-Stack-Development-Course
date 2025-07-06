@@ -1,1 +1,18 @@
 
+Redux allows state management which helps when re-rendering data with long chains of props and states. 
+In Redux, a central store holds the entire application list in a state tree, actions are sent with type
+from the application to the store, the reducer recieves an old state and an action and returns a new 
+state and subscription is triggered in the components when the state is updated in the store.
+
+Redux Toolkit is an officiaal package in Redux that provides simplified development of Redux and 
+streamlines Redux tasks. Several function can be performed and called with one call of a funciton.
+This reduction makes the code cleaner and more concise resulting in a faster development time.
+
+Reduxt toolkit contains one slice file and one store file. The slice file contains the application
+state and the logic needed to update it, the slices are usually defined by a function given and
+consists of reducers, action creators and an intial state.
+In the Redux store, we create it by using a funciton, configureStore() and allows access to the state 
+using the getState() function.
+Slices define individual parts of an application state and the logic needed to update them, the store 
+combines all these slices to cleate an application state tree.
+
